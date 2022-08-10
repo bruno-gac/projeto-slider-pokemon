@@ -14,23 +14,15 @@ function mostrarCartao(indiceCartao) {
 }
 
 btnAvancar.addEventListener("click", function () {
-
   if (cartaoAtual === cartoes.length - 1) return;
-
   esconderCartaoSelecionado();
-
   cartaoAtual++;
-
   mostrarCartao(cartaoAtual);
 });
 
 btnVoltar.addEventListener("click", function () {
-
   if (cartaoAtual === 0) return;
-
   esconderCartaoSelecionado();
-
-  cartaoAtual--;
-  
+  cartaoAtual--;  
   mostrarCartao(cartaoAtual);
 });
